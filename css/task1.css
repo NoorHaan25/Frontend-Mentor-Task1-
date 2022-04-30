@@ -1,0 +1,144 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* Small */
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+    width: 1170px;
+    }
+}
+/***************************************************************************************************/
+.container{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/*****************************************************************************************************/
+.four-cards{
+    padding-top: 50px;
+    background-color: hsl(0, 0%, 90%);
+    
+}
+.four-cards .container > .text{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.four-cards .container .text h6{
+    font-weight: normal;
+    font-size: 28px;
+    color: hsl(0, 0%, 30%);
+}
+@media (max-width:767px){
+    .four-cards .container .text h6{
+        font-size: 15px;
+    }
+}
+.four-cards .container .text h1{
+    font-size: 29px;
+    color: hsl(0, 0%, 30%);
+}
+@media (max-width:767px){
+    .four-cards .container .text h1{
+        font-size: 15px;
+    }
+}
+.four-cards .container .text p{
+    color: hsl(0, 0%, 70%);
+    width: 513px;
+    padding: 10px 20px;
+    font-size: 13px;
+}
+@media (max-width:767px){
+    .four-cards .container .text p{
+        
+        width: 288px;
+    }
+}
+.four-cards .container .cards{
+    display: grid;
+    grid-template-columns: repeat(3 , 300px);
+    gap: 15px;
+    padding: 50px;
+}
+@media (max-width:1199px){
+    .four-cards .container .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.four-cards .container .cards .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 4px 0 #00000047;
+    
+}
+.four-cards .container .cards .card .text{
+    padding: 20px;
+}
+.four-cards .container .cards .card .text h1{
+    font-size: 16px;
+    color: hsl(0, 0%, 30%);
+    padding: 10px;
+}
+.four-cards .container .cards .card .text p{
+    color: hsl(0, 0%, 70%);
+    padding: 0 10px;
+    font-size: 13px;
+    max-width: 100%;
+}
+.four-cards .container .cards .card .img{
+    display: flex;
+    justify-content: end;
+}
+.four-cards .container .cards .card img{
+    width: 85px;
+    padding: 18px;
+}
+.calculator{
+    grid-area: 1/3/2/4;
+    border-top: 3px solid hsl(212, 86%, 64%);
+
+}
+.karma{
+    grid-area: 2/2/3/3;
+    border-top: 3px solid  hsl(34, 97%, 64%);
+
+}
+.supervisor ,.calculator{
+    transform: translateY(50%);
+}
+@media (max-width:1199px){
+    .supervisor ,.calculator{
+        transform: translateY(0);
+    }
+}
+.supervisor{
+    border-top: 3px solid hsl(180, 62%, 55%);
+}
+.team-builder{
+    border-top: 3px solid hsl(0, 78%, 62%);
+    
+}
+
